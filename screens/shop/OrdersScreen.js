@@ -9,7 +9,7 @@ const OrderScreen = () =>{
 
     return<FlatList data={orders} 
     keyExtractor ={item =>item.id}
-renderItem ={itemData =><OrderItem amount={itemData.item.totalAmount}/>}/>
+renderItem ={itemData =><OrderItem amount={itemData.item.totalAmount} items={itemData.item} />}/>
 
 
 }
