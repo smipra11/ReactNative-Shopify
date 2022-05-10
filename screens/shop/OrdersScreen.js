@@ -6,6 +6,7 @@ import HeaderButton from "../../components/UI/HeaderButton"
 import OrderItem from "../../components/shop/OrderItem"
 const OrderScreen = () =>{
     const orders= useSelector(state => state.orders.orders)
+    console.log(orders)
 
     return<FlatList data={orders} 
     keyExtractor ={item =>item.id}

@@ -12,12 +12,7 @@ const OrderItem = (props) => {
 
 
             </View>
-            <Button title="Show Detail" 
-            onPress={() => { setshowDetail(prevstate => !prevstate) }} />
-            {showDetail && <View>
-                {props.items.map((CartItem => <CartItem quantity={CartItem.quantity} amount={CartItem.sum} title={CartItem.title}/>))}
-                
-                </View>}
+            
         </View>
     )
 
